@@ -11,7 +11,11 @@ function html(done){
 	gulp.src("./src/html/templates/*.ejs") //Gulp skal hente en "ting" et sted fra. * - betyder der kan stå hvad som helst.
 		.pipe(ejs())//Pipe transportere noget fra et sted....
 		.pipe(rename(function(path){
-			path.extname = ".html"//Fortæller at filen skal hedde .html
+			if (path.basename != "index"){//Hvis fil navnet ikke er lig med index,
+				path.dirname = path.basename; //Ligger den ind i mappe som hedder basename,
+				path.basename = "index";//Selve filen skal hedde "index",
+			}
+			path.extname = ".html";//Fortæller at filen skal hedde .html
 		}))
 		.pipe(gulp.dest("./dist"))//... Til et andet sted. Til mappen dist.
 		.pipe(connect.reload());
@@ -49,11 +53,22 @@ function watchJavaScript(){
 	gulp.watch("./src/js/**/*.js", { ignoreInitial: false }, javaScript);//False gør at det, den gør det lige så snart den starter og ikke kun når den kører.
 }
 
+function json(done){
+	gulp.src("./src/json/*.json")
+		.pipe(gulp.dest("./dist/data"))//dest = destanation.
+		.pipe(connect.reload());
+	done();
+}
+
+function watchjson(){
+	gulp.watch("./src/json/**/*.json", { ignoreInitial: false}, json);
+}
 
 gulp.task("dev", function(done){//Gulp packgets gør - function .....
 	watchhtml();//Kører functionen 
 	watchScss();
 	watchJavaScript();
+	watchjson();
 	connect.server({ //Bruger connect packget
 		livereload: true,//Reload browseren, ved ændringer
 		root: "dist"//Hvor skal serveren eksistere

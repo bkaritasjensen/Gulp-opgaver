@@ -1,6 +1,0 @@
-index__section {
-  display: flex; }
-  index__section index__article {
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end; }

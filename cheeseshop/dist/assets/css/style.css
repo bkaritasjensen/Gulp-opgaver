@@ -1,7 +1,7 @@
 .index_main {
-  background-image: url("/billeder/hero-bg.jpg");
-  background-repeat: no-repeat;
-  background-position: center; }
+  /* background-image: url("/billeder/hero-bg.jpg");
+	background-repeat: no-repeat;
+	background-position: center; */ }
   .index_main .index_section {
     display: flex;
     flex-direction: column;
