@@ -1,0 +1,16 @@
+
+.index_main{
+	background-image: url("/billeder/hero-bg.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+
+	.index_section{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		justify-content: flex-end;
+		.index_article{
+			align-items: flex-end;
+		}
+	}
+}

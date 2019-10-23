@@ -1,0 +1,86 @@
+{
+	"products": [
+		{
+			"categoryName": "Oste",
+			"categoryID": 1,
+			"product": [
+				{
+					"navn": "Gouda",
+					"pris": 200,
+					"Land": "Danmark",
+					"beskrivelse": "Fromage smelly cheese cheesecake. Fromage emmental squirty cheese monterey jack swiss smelly cheese goat queso. Cheddar cut the cheese say cheese squirty cheese camembert de normandie emmental fondue cauliflower cheese. Pecorino cheddar cheese and biscuits emmental cheese and biscuits cheddar swiss cheddar. Cheese and wine bocconcini cheesecake cheese triangles.
+					Parmesan feta cream cheese. Cottage cheese cheesy grin cheddar squirty cheese goat the big cheese pepper jack melted cheese. Cheesy grin bocconcini ricotta fromage frais ricotta everyone loves cut the cheese red leicester. Cheesy feet taleggio jarlsberg cheesecake cheese triangles the big cheese caerphilly mascarpone. Cream cheese danish fontina when the cheese comes out everybody's happy.",
+					"kategori": "Oste",
+					"photo": "",
+					"productID": 1
+				},
+				{
+					"navn": "Gouda",
+					"pris": 200,
+					"Land": "Danmark",
+					"beskrivelse": "Fromage smelly cheese cheesecake. Fromage emmental squirty cheese monterey jack swiss smelly cheese goat queso. Cheddar cut the cheese say cheese squirty cheese camembert de normandie emmental fondue cauliflower cheese. Pecorino cheddar cheese and biscuits emmental cheese and biscuits cheddar swiss cheddar. Cheese and wine bocconcini cheesecake cheese triangles.
+					Parmesan feta cream cheese. Cottage cheese cheesy grin cheddar squirty cheese goat the big cheese pepper jack melted cheese. Cheesy grin bocconcini ricotta fromage frais ricotta everyone loves cut the cheese red leicester. Cheesy feet taleggio jarlsberg cheesecake cheese triangles the big cheese caerphilly mascarpone. Cream cheese danish fontina when the cheese comes out everybody's happy.",
+					"kategori": "Oste",
+					"photo": "",
+					"productID": 2
+				},
+				{
+					"navn": "Gouda",
+					"pris": 200,
+					"Land": "Danmark",
+					"beskrivelse": "Fromage smelly cheese cheesecake. Fromage emmental squirty cheese monterey jack swiss smelly cheese goat queso. Cheddar cut the cheese say cheese squirty cheese camembert de normandie emmental fondue cauliflower cheese. Pecorino cheddar cheese and biscuits emmental cheese and biscuits cheddar swiss cheddar. Cheese and wine bocconcini cheesecake cheese triangles.
+					Parmesan feta cream cheese. Cottage cheese cheesy grin cheddar squirty cheese goat the big cheese pepper jack melted cheese. Cheesy grin bocconcini ricotta fromage frais ricotta everyone loves cut the cheese red leicester. Cheesy feet taleggio jarlsberg cheesecake cheese triangles the big cheese caerphilly mascarpone. Cream cheese danish fontina when the cheese comes out everybody's happy.",
+					"kategori": "Oste",
+					"photo": "",
+					"productID": 3
+				},
+				{
+					"navn": "Gouda",
+					"pris": 200,
+					"Land": "Danmark",
+					"beskrivelse": "Fromage smelly cheese cheesecake. Fromage emmental squirty cheese monterey jack swiss smelly cheese goat queso. Cheddar cut the cheese say cheese squirty cheese camembert de normandie emmental fondue cauliflower cheese. Pecorino cheddar cheese and biscuits emmental cheese and biscuits cheddar swiss cheddar. Cheese and wine bocconcini cheesecake cheese triangles.
+					Parmesan feta cream cheese. Cottage cheese cheesy grin cheddar squirty cheese goat the big cheese pepper jack melted cheese. Cheesy grin bocconcini ricotta fromage frais ricotta everyone loves cut the cheese red leicester. Cheesy feet taleggio jarlsberg cheesecake cheese triangles the big cheese caerphilly mascarpone. Cream cheese danish fontina when the cheese comes out everybody's happy.",
+					"kategori": "Oste",
+					"photo": "",
+					"productID": 4
+				}
+			]
+		},
+		{
+			"categoryName": "Vin",
+			"categoryID": 2,
+			"product": [
+				{
+					"navn": "Rosso",
+					"pris": 200,
+					"Land": "Italien",
+					"beskrivelse": "Fromage smelly cheese cheesecake. Fromage emmental squirty cheese monterey jack swiss smelly cheese goat queso. Cheddar cut the cheese say cheese squirty cheese camembert de normandie emmental fondue cauliflower cheese. Pecorino cheddar cheese and biscuits emmental cheese and biscuits cheddar swiss cheddar. Cheese and wine bocconcini cheesecake cheese triangles.
+					Parmesan feta cream cheese. Cottage cheese cheesy grin cheddar squirty cheese goat the big cheese pepper jack melted cheese. Cheesy grin bocconcini ricotta fromage frais ricotta everyone loves cut the cheese red leicester. Cheesy feet taleggio jarlsberg cheesecake cheese triangles the big cheese caerphilly mascarpone. Cream cheese danish fontina when the cheese comes out everybody's happy.",
+					"kategori": "Vine",
+					"photo": "",
+					"productID": 5
+				},
+				{
+					"navn": "Rosso",
+					"pris": 200,
+					"Land": "Italien",
+					"beskrivelse": "Fromage smelly cheese cheesecake. Fromage emmental squirty cheese monterey jack swiss smelly cheese goat queso. Cheddar cut the cheese say cheese squirty cheese camembert de normandie emmental fondue cauliflower cheese. Pecorino cheddar cheese and biscuits emmental cheese and biscuits cheddar swiss cheddar. Cheese and wine bocconcini cheesecake cheese triangles.
+					Parmesan feta cream cheese. Cottage cheese cheesy grin cheddar squirty cheese goat the big cheese pepper jack melted cheese. Cheesy grin bocconcini ricotta fromage frais ricotta everyone loves cut the cheese red leicester. Cheesy feet taleggio jarlsberg cheesecake cheese triangles the big cheese caerphilly mascarpone. Cream cheese danish fontina when the cheese comes out everybody's happy.",
+					"kategori": "Vine",
+					"photo": "",
+					"productID": 6
+				},
+				{
+					"navn": "Rosso",
+					"pris": 200,
+					"Land": "Italien",
+					"beskrivelse": "Fromage smelly cheese cheesecake. Fromage emmental squirty cheese monterey jack swiss smelly cheese goat queso. Cheddar cut the cheese say cheese squirty cheese camembert de normandie emmental fondue cauliflower cheese. Pecorino cheddar cheese and biscuits emmental cheese and biscuits cheddar swiss cheddar. Cheese and wine bocconcini cheesecake cheese triangles.
+					Parmesan feta cream cheese. Cottage cheese cheesy grin cheddar squirty cheese goat the big cheese pepper jack melted cheese. Cheesy grin bocconcini ricotta fromage frais ricotta everyone loves cut the cheese red leicester. Cheesy feet taleggio jarlsberg cheesecake cheese triangles the big cheese caerphilly mascarpone. Cream cheese danish fontina when the cheese comes out everybody's happy.",
+					"kategori": "Vine",
+					"photo": "",
+					"productID": 7
+				}
+			]
+		}	
+	]
+}
