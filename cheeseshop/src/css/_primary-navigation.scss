@@ -1,11 +1,14 @@
 nav{
-	background-color: $primaryColor;
-	height: 200px;
 	display: inline;
 	color: white;
 	ul{
+		width: 100%;
+		margin: 0;
+		background-color: $primaryColor;
+		height: 50px;
 		display: flex;
 		list-style: none;
+		align-items: center;
 		li{
 			padding: 0 1em;
 			a{

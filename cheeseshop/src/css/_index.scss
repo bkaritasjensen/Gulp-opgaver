@@ -3,14 +3,50 @@
 	/* background-image: url("/billeder/hero-bg.jpg");
 	background-repeat: no-repeat;
 	background-position: center; */
+	
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: flex-end;
+		.index_h1{
+		margin: 5% 10vw 10% 0;
+		font-size: 5em;
+		width: 30%;
+		text-align: right;
+		}
 
 	.index_section{
 		display: flex;
 		flex-direction: column;
 		align-items: flex-end;
 		justify-content: flex-end;
+		width: 45vw;
+		margin: 0 10vw 10% 0;
+			
 		.index_article{
-			align-items: flex-end;
+			padding: 50px 30px;
+			background-color:rgba(63, 61, 61, 0.2);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			.index_descriptionBox{
+				margin: 0 0 0 5px;
+				.index_descriptionHeader{
+					margin: 0;
+				}
+				.index_descriptionText{
+					font-weight: lighter;
+					font-size: 0.9em;
+				}
+				.index_button{
+					border: none;
+					background: none;
+					color: red;
+					float: right;
+					margin-top: 10%;
+				}
+
+			}
 		}
 	}
 }

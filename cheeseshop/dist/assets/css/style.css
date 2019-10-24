@@ -1,23 +1,63 @@
+body {
+  margin: 0; }
+
 .index_main {
   /* background-image: url("/billeder/hero-bg.jpg");
 	background-repeat: no-repeat;
-	background-position: center; */ }
+	background-position: center; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end; }
+  .index_main .index_h1 {
+    margin: 5% 10vw 10% 0;
+    font-size: 5em;
+    width: 30%;
+    text-align: right; }
   .index_main .index_section {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    justify-content: flex-end; }
+    justify-content: flex-end;
+    width: 45vw;
+    margin: 0 10vw 10% 0; }
     .index_main .index_section .index_article {
-      align-items: flex-end; }
+      padding: 50px 30px;
+      background-color: rgba(63, 61, 61, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .index_main .index_section .index_article .index_descriptionBox {
+        margin: 0 0 0 5px; }
+        .index_main .index_section .index_article .index_descriptionBox .index_descriptionHeader {
+          margin: 0; }
+        .index_main .index_section .index_article .index_descriptionBox .index_descriptionText {
+          font-weight: lighter;
+          font-size: 0.9em; }
+        .index_main .index_section .index_article .index_descriptionBox .index_button {
+          border: none;
+          background: none;
+          color: red;
+          float: right;
+          margin-top: 10%; }
+
+.products_main {
+  margin: 5% 0 5% 10%; }
+
+.products_headerBox {
+  width: 40vw; }
 
 nav {
-  background-color: black;
-  height: 200px;
   display: inline;
   color: white; }
   nav ul {
+    width: 100%;
+    margin: 0;
+    background-color: black;
+    height: 50px;
     display: flex;
-    list-style: none; }
+    list-style: none;
+    align-items: center; }
     nav ul li {
       padding: 0 1em; }
       nav ul li a {
