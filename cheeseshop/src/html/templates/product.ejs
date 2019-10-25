@@ -2,37 +2,36 @@
 <% include ../partials/header %>
 
 <main>
-<template id="cardTemplate">
-<li>
-	<article>
+	<section class="product_mainSection">
 		<h1></h1>
-		<img width="230" height="170" class="product_image" src="" alt=""/>
-		<div>
-			<img width="" height="" class="product_image" src="" alt=""/>
-			<img width="" height="" class="product_image" src="" alt=""/>
-			<img width="" height="" class="product_image" src="" alt=""/>
-		</div>
-		<div>
-			<p></p>
-			<table>
-				<tr>
-					<td>Land</td>
-					<td><span class="country"></span></td>		
-				</tr>
-				<tr>
-					<td>Vægt</td>
-					<td><span class="weight"></span></td>
-				</tr>
-				<tr>
-					<td>Pris</td>
-					<td><span class="price"></psan></td>
-				</tr>
-			</table>
-		</div>
+			<article class="product_mainBox">
+				<div>
+					<img class="imageBig" width="230" height="170" src="" alt=""/>
+					<div class="product_smallImages">
+						<img width="70" height="50" class="product_imageSmall1" src="" alt=""/>
+						<img width="70" height="50" class="product_imageSmall2" src="" alt=""/>
+						<img width="70" height="50" class="product_imageSmall3" src="" alt=""/>
+					</div>
+				</div>
+				<div class="product_textBox">
+					<p></p>
+					<table>
+						<tr>
+							<td>Land</td>
+							<td><span class="country"></span></td>		
+						</tr>
+						<tr>
+							<td>Vægt</td>
+							<td><span class="weight"></span></td>
+						</tr>
+						<tr>
+							<td>Pris</td>
+							<td><span class="price"></psan></td>
+						</tr>
+					</table>
+				</div>
+			</article>
 	</section>
-	</article>
-</li>
-</template>
 
 	<section>
 		<h4>Måske er du også interesseret i dette</h4>
@@ -44,6 +43,7 @@
 		</div>
 	</section>
 </main>
+		
 
 <script src="/assets/js/get-product.js"></script>
 <% include ../partials/after-footer %>

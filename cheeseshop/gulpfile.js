@@ -4,6 +4,7 @@ const rename = require("gulp-rename");//rename omdøber filen til noget andet.
 const connect = require("gulp-connect");
 const sass = require('gulp-sass');
 const babel = require('gulp-babel');
+const imagemin = require('gulp-imagemin');
 
 sass.compiler = require("node-sass");
 
@@ -64,11 +65,24 @@ function watchjson(){
 	gulp.watch("./src/json/**/*.json", { ignoreInitial: false}, json);
 }
 
+function images(done){
+	gulp.src("./src/images/*")
+		.pipe(imagemin())
+		.pipe(gulp.dest("dist/assets/images"))
+		.pipe(connect.reload());
+	done();
+}
+
+function watchImages(){
+	gulp.watch("./src/images/*", { ignoreInitial: false }, images);
+}
+
 gulp.task("dev", function(done){//Gulp packgets gør - function .....
 	watchhtml();//Kører functionen 
 	watchScss();
 	watchJavaScript();
 	watchjson();
+	watchImages();
 	connect.server({ //Bruger connect packget
 		livereload: true,//Reload browseren, ved ændringer
 		root: "dist"//Hvor skal serveren eksistere

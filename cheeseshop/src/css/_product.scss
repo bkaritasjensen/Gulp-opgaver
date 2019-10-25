@@ -1,0 +1,31 @@
+.product_mainSection{
+	margin: 20px 0 10px 50px;
+
+	h1{
+		margin: 50px 0 10px 0;
+	}
+	.product_mainBox{
+		display: flex;
+
+		.imageBig{
+			object-fit: cover;
+		}
+		.product_smallImages{
+			display: flex;
+			justify-content: space-between;
+			margin: 5px 0 0 0;
+			object-fit: cover;
+		}
+		.product_textBox{
+			margin: 0 0 0 10px;
+
+			table{
+				margin: 10px 0 0 30vw;
+
+				td{
+					width: 100px;
+				}
+			}
+		}
+	}
+}

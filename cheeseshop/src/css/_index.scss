@@ -1,36 +1,43 @@
 
 .index_main{
-	/* background-image: url("/billeder/hero-bg.jpg");
+	background-image: url("/assets/images/hero-bg.jpg");
 	background-repeat: no-repeat;
-	background-position: center; */
-	
+	background-size: cover;
+	z-index: 10;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
 	justify-content: flex-end;
-		.index_h1{
+
+	.index_h1{
 		margin: 5% 10vw 10% 0;
 		font-size: 5em;
 		width: 30%;
 		text-align: right;
 		}
-
 	.index_section{
 		display: flex;
 		flex-direction: column;
 		align-items: flex-end;
 		justify-content: flex-end;
-		width: 45vw;
+		width: 40vw;
 		margin: 0 10vw 10% 0;
 			
 		.index_article{
 			padding: 50px 30px;
-			background-color:rgba(63, 61, 61, 0.2);
+			background-color:rgba(63, 61, 61, 0.5);
 			display: flex;
 			align-items: center;
 			justify-content: center;
+
+			.index_descriptionImage{
+				width: 230px;
+				object-fit: cover;
+			}
 			.index_descriptionBox{
 				margin: 0 0 0 5px;
+				text-anchor: middle;
+
 				.index_descriptionHeader{
 					margin: 0;
 				}

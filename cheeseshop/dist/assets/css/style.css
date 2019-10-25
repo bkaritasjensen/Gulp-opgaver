@@ -2,9 +2,10 @@ body {
   margin: 0; }
 
 .index_main {
-  /* background-image: url("/billeder/hero-bg.jpg");
-	background-repeat: no-repeat;
-	background-position: center; */
+  background-image: url("/assets/images/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 10;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -19,16 +20,20 @@ body {
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-end;
-    width: 45vw;
+    width: 40vw;
     margin: 0 10vw 10% 0; }
     .index_main .index_section .index_article {
       padding: 50px 30px;
-      background-color: rgba(63, 61, 61, 0.2);
+      background-color: rgba(63, 61, 61, 0.5);
       display: flex;
       align-items: center;
       justify-content: center; }
+      .index_main .index_section .index_article .index_descriptionImage {
+        width: 230px;
+        object-fit: cover; }
       .index_main .index_section .index_article .index_descriptionBox {
-        margin: 0 0 0 5px; }
+        margin: 0 0 0 5px;
+        text-anchor: middle; }
         .index_main .index_section .index_article .index_descriptionBox .index_descriptionHeader {
           margin: 0; }
         .index_main .index_section .index_article .index_descriptionBox .index_descriptionText {
@@ -48,10 +53,45 @@ body {
   width: 40vw; }
 
 ul {
-  list-style: none; }
-  ul .products_image {
-    width: 230px;
-    height: 170px; }
+  list-style: none;
+  padding: 0;
+  margin: 60px 0 0 0; }
+  ul .products_descriptionBox {
+    display: flex;
+    margin: 40px 0 0 0;
+    width: 700px; }
+    ul .products_descriptionBox .products_image {
+      object-fit: cover; }
+    ul .products_descriptionBox .products_descriptionTextBox {
+      margin: 0 0 0 5px;
+      align-self: center;
+      width: 100%; }
+      ul .products_descriptionBox .products_descriptionTextBox h1 {
+        margin: 0; }
+      ul .products_descriptionBox .products_descriptionTextBox p {
+        margin: 0; }
+      ul .products_descriptionBox .products_descriptionTextBox td {
+        width: 100px; }
+
+.product_mainSection {
+  margin: 20px 0 10px 50px; }
+  .product_mainSection h1 {
+    margin: 50px 0 10px 0; }
+  .product_mainSection .product_mainBox {
+    display: flex; }
+    .product_mainSection .product_mainBox .imageBig {
+      object-fit: cover; }
+    .product_mainSection .product_mainBox .product_smallImages {
+      display: flex;
+      justify-content: space-between;
+      margin: 5px 0 0 0;
+      object-fit: cover; }
+    .product_mainSection .product_mainBox .product_textBox {
+      margin: 0 0 0 10px; }
+      .product_mainSection .product_mainBox .product_textBox table {
+        margin: 10px 0 0 30vw; }
+        .product_mainSection .product_mainBox .product_textBox table td {
+          width: 100px; }
 
 nav {
   display: inline;
@@ -72,5 +112,5 @@ nav {
         nav ul li a:hover {
           color: yellow; }
 
-li:first-child {
+nav ul li:first-child {
   margin-right: 50%; }

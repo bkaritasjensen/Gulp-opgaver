@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
       clone.querySelector("h1").innerText = product.navn; //Fordi det ikke er html man lægger ind men tekst.
 
       clone.querySelector("p").innerText = product.beskrivelse[0];
-      clone.querySelector("img").src = product.billeder[0]; //[0] fordi det er en array og det er det første element i arrayet der bliver valgt & src fordi det er en billede der skal hentes.
+      clone.querySelector("img").src = "/assets/images/".concat(product.billeder[0]); //[0] fordi det er en array og det er det første element i arrayet der bliver valgt & src fordi det er en billede der skal hentes.
 
       clone.querySelector(".price").innerText = product.pris;
       clone.querySelector(".weight").innerText = product.vægt;
