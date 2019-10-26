@@ -23,7 +23,7 @@ function html(done){
 	done();
 }
 
-function watchhtml(done){//Holder øje med html filerne, hvis der laves ændringer.
+function watchhtml(){//Holder øje med html filerne, hvis der laves ændringer.
 	gulp.watch("./src/html/**/*.ejs", { ignoreInitial: false}, html); //** - alle mapper i html * - alle filer med .ejs
 }
 
@@ -89,3 +89,12 @@ gulp.task("dev", function(done){//Gulp packgets gør - function .....
 	})
 	done();
 }); 
+
+gulp.task("build", function(done) {
+	html();
+	scss();
+	javaScript();
+	json();
+	images();
+	done();
+});
