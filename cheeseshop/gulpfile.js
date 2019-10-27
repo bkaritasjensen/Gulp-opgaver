@@ -91,10 +91,10 @@ gulp.task("dev", function(done){//Gulp packgets gør - function .....
 }); 
 
 gulp.task("build", function(done) {
-	html();
-	scss();
-	javaScript();
-	json();
-	images();
+	html(done);
+	scss(done);
+	javaScript(done);
+	json(done);
+	images(done);
 	done();
 });
