@@ -6,6 +6,24 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="/assets/css/style.css">
 	<title>Brians Ostebiks</title>
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+	<!-- TODO: Add SDKs for Firebase products that you want to use-->
+	<script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-firestore.js"></script>
+	<script>
+  	// Your web app's Firebase configuration
+ 	var firebaseConfig = {
+    apiKey: "AIzaSyBvX_EU0LcP_aq6qQGCd2Isw1SlUoa1xyo",
+    authDomain: "brians-oste-biks.firebaseapp.com",
+    databaseURL: "https://brians-oste-biks.firebaseio.com",
+    projectId: "brians-oste-biks",
+    storageBucket: "brians-oste-biks.appspot.com",
+    messagingSenderId: "963200491883",
+    appId: "1:963200491883:web:c06b997b5b5d052beaac2e"
+ 	 };
+  	// Initialize Firebase
+  	firebase.initializeApp(firebaseConfig);
+	</script>
 </head>
 <body><!-- importere html filer til denne. -->
 
@@ -13,8 +31,8 @@
 	<ul>
 		<li><a href="/">Brians Ostebiks</a></li>
 		<li><a href="/products">Oste</a></li>
-		<li><a href="/products">Vin</a></li>
-		<li><a href="/products">Brød</a></li>
+		<li><a href="">Vin</a></li>
+		<li><a href="">Brød</a></li>
 		<li href="#"><a>Kontakt</a></li>
 	</ul>
 </nav>
