@@ -7,23 +7,34 @@
 	.product_mainBox{
 		display: flex;
 
-		.imageBig{
-			object-fit: contain;
-		}
-		.product_smallImages{
+		.product_imagesBox{
 			display: flex;
-			justify-content: space-between;
-			margin: 5px 0 0 0;
-			object-fit: cover;
+			width: 300px;
+			flex-wrap: wrap;
+			margin-right: 2em;
+
+			.imageBig{
+				object-fit: contain;
+			}
+			.product_smallImages{
+				display: inherit;
+				margin: 5px 0 0 0;
+
+				.product_imageSmall{
+					margin: 0 2px;
+					object-fit: cover;
+				}
+			}
 		}
 		.product_textBox{
 			margin: 0 0 0 10px;
+			width: 400px;
 
 			table{
 				margin: 10px 0 0 20vw;
 
 				td{
-					max-width: 140px;
+					width: 150px;
 				}
 			}
 		}

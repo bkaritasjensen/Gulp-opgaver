@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", () =>{
 
 			productShow.querySelector("h1").innerText = doc.data().name;
 			productShow.querySelector("p").innerText = doc.data().description;
+			productShow.querySelector(".imageBig").src = `/assets/images/${doc.data().image[0]}`;
 			productShow.querySelector(".price").innerText = doc.data().price;
 			productShow.querySelector(".country").innerText = doc.data().country;
 			productShow.querySelector(".region").innerText = doc.data().region;
@@ -30,10 +31,15 @@ document.addEventListener("DOMContentLoaded", () =>{
 
 			imageBox.querySelectorAll("img").forEach(function (img){
 				img.addEventListener("click", function (){
-					console.log(this.src)
-					imageBox.querySelector(".imageBig").src = this.src;
+					document.querySelector(".imageBig").src = this.src;
+					if(this === imageTemplate){
+						imageTemplate.style.display = this.none;
+
+					}
 				})
 			})
+		}else{
+			document.querySelector(".product_mainSection").innerHTML = "Produktet findes ikke!"
 		}
 		
 		
