@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () =>{
 			
 			console.log(doc.data())
 			clone.querySelector("h1").innerText = doc.data().name;//Fordi det ikke er html man lægger ind men tekst.
-			clone.querySelector("img").src = `/assets/images/${doc.data().image}`;//[0] fordi det er en array og det er det første element i arrayet der bliver valgt & src fordi det er en billede der skal hentes.
+			clone.querySelector("img").src = `/assets/images/${doc.data().image[0]}`;//[0] fordi det er en array og det er det første element i arrayet der bliver valgt & src fordi det er en billede der skal hentes.
 			clone.querySelector("p").innerText = doc.data().description[0]; 
 			clone.querySelector(".price").innerText = doc.data().price;
 			clone.querySelector(".country").innerText = doc.data().country;
@@ -22,5 +22,8 @@ document.addEventListener("DOMContentLoaded", () =>{
 
 			list.appendChild(clone);
 		});
+
+		
 	})
+
 });

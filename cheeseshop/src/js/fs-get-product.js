@@ -8,16 +8,36 @@ document.addEventListener("DOMContentLoaded", () =>{
 	var docRef = db.collection("Wine").doc(skuId);
 	
 	docRef.get().then(function(doc){
-		if(doc != skuId){
+		if(doc.exists){
 			const productShow = document.querySelector(".product_mainSection");
 
 			productShow.querySelector("h1").innerText = doc.data().name;
-			productShow.querySelector(".imageBig").src = `/assets/images/${doc.data().image}`;
 			productShow.querySelector("p").innerText = doc.data().description;
 			productShow.querySelector(".price").innerText = doc.data().price;
 			productShow.querySelector(".country").innerText = doc.data().country;
 			productShow.querySelector(".region").innerText = doc.data().region;
 			productShow.querySelector(".category").innerText = doc.data().category;
+
+			const imageBox = productShow.querySelector(".product_smallImages");
+			const imageTemplate = document.getElementById("galleryTemplate");
+	
+			doc.data().image.forEach(element => {
+				const clone = imageTemplate.content.cloneNode(true);
+				
+				clone.querySelector("img").src = `/assets/images/${element}`;
+				imageBox.appendChild(clone);
+			});
+
+			imageBox.querySelectorAll("img").forEach(function (img){
+				img.addEventListener("click", function (){
+					console.log(this.src)
+					imageBox.querySelector(".imageBig").src = this.src;
+				})
+			})
 		}
+		
+		
 	});
+
 });
+
