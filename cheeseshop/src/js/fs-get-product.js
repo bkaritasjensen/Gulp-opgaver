@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", () =>{
 	
 	docRef.get().then(function(doc){
 		if(doc != skuId){
-			//console.log("hej med dig") 
 			const productShow = document.querySelector(".product_mainSection");
 
 			productShow.querySelector("h1").innerText = doc.data().name;
