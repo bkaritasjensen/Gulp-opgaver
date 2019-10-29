@@ -61,8 +61,7 @@ ul {
     margin: 40px 0 0 0;
     width: 700px; }
     ul .products_descriptionBox .products_image {
-      height: 100%;
-      object-fit: cover; }
+      object-fit: contain; }
     ul .products_descriptionBox .products_descriptionTextBox {
       margin: 0 0 0 5px;
       align-self: center;
@@ -81,7 +80,7 @@ ul {
   .product_mainSection .product_mainBox {
     display: flex; }
     .product_mainSection .product_mainBox .imageBig {
-      object-fit: cover; }
+      object-fit: contain; }
     .product_mainSection .product_mainBox .product_smallImages {
       display: flex;
       justify-content: space-between;
@@ -90,9 +89,9 @@ ul {
     .product_mainSection .product_mainBox .product_textBox {
       margin: 0 0 0 10px; }
       .product_mainSection .product_mainBox .product_textBox table {
-        margin: 10px 0 0 30vw; }
+        margin: 10px 0 0 20vw; }
         .product_mainSection .product_mainBox .product_textBox table td {
-          width: 140px; }
+          max-width: 140px; }
 
 nav {
   display: inline;

@@ -16,8 +16,7 @@ ul{
 		width: 700px;
 
 		.products_image{
-			height: 100%;
-			object-fit: cover;
+			object-fit: contain;
 		}
 		.products_descriptionTextBox{
 			margin: 0 0 0 5px;

@@ -8,7 +8,7 @@
 		display: flex;
 
 		.imageBig{
-			object-fit: cover;
+			object-fit: contain;
 		}
 		.product_smallImages{
 			display: flex;
@@ -20,10 +20,10 @@
 			margin: 0 0 0 10px;
 
 			table{
-				margin: 10px 0 0 30vw;
+				margin: 10px 0 0 20vw;
 
 				td{
-					width: 140px;
+					max-width: 140px;
 				}
 			}
 		}

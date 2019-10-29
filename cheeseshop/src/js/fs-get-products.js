@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", () =>{
 			clone.querySelector(".country").innerText = doc.data().country;
 			clone.querySelector(".region").innerText = doc.data().region;
 			clone.querySelector(".category").innerText = doc.data().category;
+			clone.querySelector("a").href = `/wine/?sku=${doc.id}`;
 
 			list.appendChild(clone);
 		});
