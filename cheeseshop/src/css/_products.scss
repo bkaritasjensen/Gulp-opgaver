@@ -16,6 +16,7 @@ ul{
 		width: 700px;
 
 		.products_image{
+			height: 100%;
 			object-fit: cover;
 		}
 		.products_descriptionTextBox{
@@ -30,7 +31,7 @@ ul{
 				margin: 0;
 			}
 			td{
-				width: 100px;
+				width: 150px;
 			}
 		}
 	}

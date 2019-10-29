@@ -61,6 +61,7 @@ ul {
     margin: 40px 0 0 0;
     width: 700px; }
     ul .products_descriptionBox .products_image {
+      height: 100%;
       object-fit: cover; }
     ul .products_descriptionBox .products_descriptionTextBox {
       margin: 0 0 0 5px;
@@ -71,7 +72,7 @@ ul {
       ul .products_descriptionBox .products_descriptionTextBox p {
         margin: 0; }
       ul .products_descriptionBox .products_descriptionTextBox td {
-        width: 100px; }
+        width: 150px; }
 
 .product_mainSection {
   margin: 20px 0 10px 50px; }
