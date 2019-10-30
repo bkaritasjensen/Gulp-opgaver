@@ -41,6 +41,8 @@ document.addEventListener("DOMContentLoaded", () =>{
 		}else{
 			document.querySelector(".product_mainSection").innerHTML = "Produktet findes ikke!"
 		}
+
+		//Math.random til varer der kunne være interessant for kunden
 		
 		
 	});

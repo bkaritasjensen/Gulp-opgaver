@@ -94,11 +94,25 @@ ul {
           object-fit: cover; }
     .product_mainSection .product_mainBox .product_textBox {
       margin: 0 0 0 10px;
-      width: 400px; }
+      width: 500px; }
       .product_mainSection .product_mainBox .product_textBox table {
         margin: 10px 0 0 20vw; }
         .product_mainSection .product_mainBox .product_textBox table td {
-          width: 150px; }
+          width: 160px;
+          margin: 0 0 0 20px; }
+  .product_mainSection .product_rating {
+    float: right;
+    margin: 0 30vw 70px 0; }
+    .product_mainSection .product_rating h4 {
+      text-align: center; }
+    .product_mainSection .product_rating button {
+      height: 50px;
+      border-radius: 5px; }
+      .product_mainSection .product_rating button .fas {
+        font-size: 3em;
+        color: black; }
+    .product_mainSection .product_rating .product_ratingScore {
+      margin: 30px 25% 0 25%; }
 
 nav {
   display: inline;

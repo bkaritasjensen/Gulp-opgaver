@@ -1,6 +1,6 @@
 .product_mainSection{
 	margin: 20px 0 10px 50px;
-
+	
 	h1{
 		margin: 50px 0 10px 0;
 	}
@@ -28,15 +28,34 @@
 		}
 		.product_textBox{
 			margin: 0 0 0 10px;
-			width: 400px;
+			width: 500px;
 
 			table{
 				margin: 10px 0 0 20vw;
 
 				td{
-					width: 150px;
+					width: 160px;
+					margin: 0 0 0 20px;
 				}
 			}
+		}
+	}
+	.product_rating{
+		float: right;
+		margin: 0 30vw 70px 0;
+		h4{
+			text-align: center;
+		}
+		button{
+			height: 50px;
+			border-radius: 5px;
+			.fas{
+				font-size: 3em;
+				color: black;
+			}
+		}
+		.product_ratingScore{
+			margin: 30px 25% 0 25%;
 		}
 	}
 }
