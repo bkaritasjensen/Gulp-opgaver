@@ -2,11 +2,28 @@ document.addEventListener("DOMContentLoaded", () =>{
 
 	const params = new URLSearchParams(window.location.search); //Henter id'et fra URL'en
 	const skuId = params.get('sku');//Tager fat i id'en fra params
+	const db = firebase.firestore(); //Laver variabel til Firebase-firestore, en metode som ligger inde i et objekt.
+	let docRef = db.collection("Wine").doc(skuId);//Henter id'en/varenummeret fra collection inde på Firestore
+
 	
-	const db = firebase.firestore();
+
+	document.querySelector(".rating").addEventListener("click", function(e){
+		const smileys = parseInt(e.target.dataset.rating);
+
+		docRef.collection("ratings")//Tager fat i collections - ratings.
+			.doc("rating")//Tager fat i dokumentet rating fra Firestore.
+			.update({//Hvad er det for en nøgle jeg gerne vil opdatere.
+				usersRated: firebase.firestore.FieldValue.increment(1),//Dette er en metode som ikke er inde i et objekt, så derfor kan jeg ikke bare skrive db., men istedet skrive firebase.firestore
+				totalSmileys: firebase.firestore.FieldValue.increment(smileys)
+			});
+			console.log(1, smileys)
+		/* 	.get()//Henter det.
+			.then(function(doc){//Så laver jeg en function med det.
+				doc.data()
+			}) */
+	});
 	
-	var docRef = db.collection("Wine").doc(skuId);
-	
+
 	docRef.get().then(function(doc){
 		if(doc.exists){
 			const productShow = document.querySelector(".product_mainSection");
@@ -41,10 +58,6 @@ document.addEventListener("DOMContentLoaded", () =>{
 		}else{
 			document.querySelector(".product_mainSection").innerHTML = "Produktet findes ikke!"
 		}
-
-		//Math.random til varer der kunne være interessant for kunden
-		
-		
 	});
 
 });

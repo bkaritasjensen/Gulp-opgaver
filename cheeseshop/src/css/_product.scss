@@ -18,7 +18,7 @@
 			}
 			.product_smallImages{
 				display: inherit;
-				margin: 5px 0 0 0;
+				margin: 5px 12% 0 12%;
 
 				.product_imageSmall{
 					margin: 0 2px;
@@ -42,16 +42,23 @@
 	}
 	.product_rating{
 		float: right;
-		margin: 0 30vw 70px 0;
+		margin: 0 40vw 0 0;
 		h4{
 			text-align: center;
+			margin: 0;
 		}
-		button{
-			height: 50px;
-			border-radius: 5px;
-			.fas{
-				font-size: 3em;
-				color: black;
+		ul{
+			display: flex;
+			justify-content: space-between;
+			margin: 20px 0 0 0;
+			li{
+				list-style: none;
+				border: none;
+				.fas{
+					font-size: 2em;
+					color: $primaryColor;
+					pointer-events: none;
+				}
 			}
 		}
 		.product_ratingScore{
