@@ -25,16 +25,20 @@ document.addEventListener("DOMContentLoaded", () =>{
 	
 	docRef.collection("ratings")
 		.doc("rating")
-		.onSnapshot(function(doc){//Opdatere data'en når der laves ændringer.
-			console.log(doc.data())
+		.onSnapshot(function(doc){//Opdatere data'en når der laves ændringer. Replacer .get() & .then(function(doc){})
 			const usersRated = doc.data().usersRated;
 			const totalSmileys = doc.data().totalSmileys;
 			const avage = totalSmileys / usersRated; //divider antal point med antal stemmer.
 			const productShow = document.querySelector(".product_mainSection");
-	
-			productShow.querySelector("h3").innerText = avage.toFixed(1);//toFixed bestemmer man hvor mange dicimaler man vil have på, dette tilfælde kun et.
-		});
+			//console.log(doc.data())
 
+			if(usersRated == 0){
+				productShow.querySelector("h3").innerText = 0.0;
+			}else{
+				console.log(avage)
+				productShow.querySelector("h3").innerText = avage.toFixed(1);//toFixed bestemmer man hvor mange dicimaler man vil have på, dette tilfælde kun et.
+			}
+		});
 
 
 	docRef.get().then(function(doc){
