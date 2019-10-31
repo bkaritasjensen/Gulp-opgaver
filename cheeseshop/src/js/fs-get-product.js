@@ -25,16 +25,15 @@ document.addEventListener("DOMContentLoaded", () =>{
 	
 	docRef.collection("ratings")
 		.doc("rating")
-		.get()
-		.then(function(doc){
-			//console.log(doc.data())
+		.onSnapshot(function(doc){//Opdatere data'en når der laves ændringer.
+			console.log(doc.data())
 			const usersRated = doc.data().usersRated;
 			const totalSmileys = doc.data().totalSmileys;
 			const avage = totalSmileys / usersRated; //divider antal point med antal stemmer.
 			const productShow = document.querySelector(".product_mainSection");
-
+	
 			productShow.querySelector("h3").innerText = avage.toFixed(1);//toFixed bestemmer man hvor mange dicimaler man vil have på, dette tilfælde kun et.
-		})
+		});
 
 
 
