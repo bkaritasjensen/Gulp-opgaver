@@ -62,7 +62,12 @@
 			}
 		}
 		.product_ratingScore{
-			margin: 30px 25% 0 25%;
+			margin: 30px 14% 0 14%;
+			display: flex;
+			align-items: center;
+			h3{
+				margin: 0 0 0 20px;
+			}
 		}
 	}
 }

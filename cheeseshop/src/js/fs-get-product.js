@@ -16,13 +16,27 @@ document.addEventListener("DOMContentLoaded", () =>{
 				usersRated: firebase.firestore.FieldValue.increment(1),//Dette er en metode som ikke er inde i et objekt, så derfor kan jeg ikke bare skrive db., men istedet skrive firebase.firestore
 				totalSmileys: firebase.firestore.FieldValue.increment(smileys)
 			});
-			console.log(1, smileys)
+			//console.log(1, smileys)
 		/* 	.get()//Henter det.
 			.then(function(doc){//Så laver jeg en function med det.
 				doc.data()
 			}) */
 	});
 	
+	docRef.collection("ratings")
+		.doc("rating")
+		.get()
+		.then(function(doc){
+			//console.log(doc.data())
+			const usersRated = doc.data().usersRated;
+			const totalSmileys = doc.data().totalSmileys;
+			const avage = totalSmileys / usersRated; //divider antal point med antal stemmer.
+			const productShow = document.querySelector(".product_mainSection");
+
+			productShow.querySelector("h3").innerText = avage.toFixed(1);//toFixed bestemmer man hvor mange dicimaler man vil have på, dette tilfælde kun et.
+		})
+
+
 
 	docRef.get().then(function(doc){
 		if(doc.exists){
