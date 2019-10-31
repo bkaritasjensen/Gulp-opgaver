@@ -1,11 +1,12 @@
 document.addEventListener("DOMContentLoaded", () =>{
 
-	const params = new URLSearchParams(window.location.search); //Henter id'et fra URL'en
+	const params = new URLSearchParams(window.location.search);//Henter id'et fra URL'en
+	const path = window.location.pathname.replace(/\/+$/, '');
 	const skuId = params.get('sku');//Tager fat i id'en fra params
 	const db = firebase.firestore(); //Laver variabel til Firebase-firestore, en metode som ligger inde i et objekt.
-	let docRef = db.collection("Wine").doc(skuId);//Henter id'en/varenummeret fra collection inde på Firestore
+	let docRef = db.collection(path).doc(skuId);//Henter id'en/varenummeret fra collection inde på Firestore
 
-	
+	//console.log(params)
 
 	document.querySelector(".rating").addEventListener("click", function(e){
 		const smileys = parseInt(e.target.dataset.rating);

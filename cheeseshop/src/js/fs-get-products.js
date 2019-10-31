@@ -2,10 +2,10 @@ document.addEventListener("DOMContentLoaded", () =>{
 
 	const cardTemplate = document.getElementById("cardTemplate");//ID loader direkte fra scoop, altså oploades hurtigere.
 	const list = document.getElementsByClassName("cardList")[0]; //getElementsB...... er en Node list.
-
+	const path = window.location.pathname.replace(/\//g,'');
 	const db = firebase.firestore();
 
-	db.collection("Wine").get().then(function(querySnapshot){
+	db.collection(path).get().then(function(querySnapshot){
 		querySnapshot.forEach(function(doc) {
 			//console.log(doc.id, " => ", doc.data()) Ser data'en i consolen 
 			const clone = cardTemplate.content.cloneNode(true); //Henter alt det inde for cardTemplate. Man bibeholder de orginale tags i html'en derfor skriver man true.
