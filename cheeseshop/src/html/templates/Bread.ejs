@@ -1,0 +1,55 @@
+<% include ../partials/head %><!-- importere html filer til denne. -->
+<% include ../partials/header %>
+
+<main>
+	<section class="product_mainSection">
+		<h1></h1>
+			<article class="product_mainBox">
+				<div class="product_imagesBox">
+					<img class="imageBig" width="300" height="200" src="" alt=""/>
+					<div class="product_smallImages">
+					</div>
+				</div>
+				<div class="product_textBox">
+					<p></p>
+					<table>
+						<tr>
+							<td>Kategori</td>
+							<td><span class="category"></span></td>
+						</tr>
+						<tr>
+							<td>Pris</td>
+							<td><span class="price"></span>&nbsp kr.</td>
+						</tr>
+					</table>
+				</div>
+			</article>
+		<div class="product_rating">
+			<h4>Hvad syntes du om vinen?</h4>
+			<ul class="rating">
+				<li data-rating="1"><i class="fas fa-poop"></i></li>
+				<li data-rating="2"><i class="fas fa-smile"></i></li>
+				<li data-rating="3"><i class="fas fa-smile-beam"></i></li>
+				<li data-rating="4"><i class="fas fa-grin"></i></li>
+				<li data-rating="5"><i class="fas fa-grin-hearts"></i></li>
+			</ul>
+			<div class="product_ratingScore">
+				<span>Gennemsnit:</span>
+				<h3></h3>
+			</div>
+		</div>
+	</section>
+	<section>
+		<h4>Måske er du også interesseret i dette</h4>
+		<div>
+			<img class="annonce_image" width="230" height="170" src="" alt=""/>
+		</div>
+	</section>
+</main>
+		
+<template id="galleryTemplate">
+		<img width="70" height="50" class="product_imageSmall" src="" alt=""/>
+</template>
+
+<script src="/assets/js/fs-get-product.js"></script>
+<% include ../partials/after-footer %>

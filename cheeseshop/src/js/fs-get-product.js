@@ -4,7 +4,10 @@ document.addEventListener("DOMContentLoaded", () =>{
 	const path = window.location.pathname.replace(/\/+$/, '');
 	const skuId = params.get('sku');//Tager fat i id'en fra params
 	const db = firebase.firestore(); //Laver variabel til Firebase-firestore, en metode som ligger inde i et objekt.
+	//const skuS = path + "s";
+
 	let docRef = db.collection(path).doc(skuId);//Henter id'en/varenummeret fra collection inde på Firestore
+	console.log(docRef)
 
 	//console.log(params)
 
@@ -50,8 +53,8 @@ document.addEventListener("DOMContentLoaded", () =>{
 			productShow.querySelector("p").innerText = doc.data().description;
 			productShow.querySelector(".imageBig").src = `/assets/images/${doc.data().image[0]}`;
 			productShow.querySelector(".price").innerText = doc.data().price;
-			productShow.querySelector(".country").innerText = doc.data().country;
-			productShow.querySelector(".region").innerText = doc.data().region;
+			if(productShow.querySelector(".country")!= undefined)productShow.querySelector(".country").innerText = doc.data().country;
+			if(productShow.querySelector(".region")!= undefined)productShow.querySelector(".region").innerText = doc.data().region;
 			productShow.querySelector(".category").innerText = doc.data().category;
 
 			const imageBox = productShow.querySelector(".product_smallImages");
