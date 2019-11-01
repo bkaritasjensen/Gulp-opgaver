@@ -49,13 +49,13 @@ document.addEventListener("DOMContentLoaded", () =>{
 		if(doc.exists){
 			const productShow = document.querySelector(".product_mainSection");
 
-			productShow.querySelector("h1").innerText = doc.data().name;
-			productShow.querySelector("p").innerText = doc.data().description;
-			productShow.querySelector(".imageBig").src = `/assets/images/${doc.data().image[0]}`;
-			productShow.querySelector(".price").innerText = doc.data().price;
+			if(productShow.querySelector("h1")!= undefined)productShow.querySelector("h1").innerText = doc.data().name;
+			if(productShow.querySelector("p")!= undefined)productShow.querySelector("p").innerText = doc.data().description;
+			if(productShow.querySelector(".imageBig")!= undefined)productShow.querySelector(".imageBig").src = `/assets/images/${doc.data().image[0]}`;
+			if(productShow.querySelector(".price")!= undefined)productShow.querySelector(".price").innerText = doc.data().price;
 			if(productShow.querySelector(".country")!= undefined)productShow.querySelector(".country").innerText = doc.data().country;
 			if(productShow.querySelector(".region")!= undefined)productShow.querySelector(".region").innerText = doc.data().region;
-			productShow.querySelector(".category").innerText = doc.data().category;
+			if(productShow.querySelector(".category")!= undefined)productShow.querySelector(".category").innerText = doc.data().category;
 
 			const imageBox = productShow.querySelector(".product_smallImages");
 			const imageTemplate = document.getElementById("galleryTemplate");
@@ -80,6 +80,5 @@ document.addEventListener("DOMContentLoaded", () =>{
 			document.querySelector(".product_mainSection").innerHTML = "Produktet findes ikke!"
 		}
 	});
-
 });
 

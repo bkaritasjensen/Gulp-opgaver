@@ -1,42 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="/assets/css/style.css">
-	<script src="https://kit.fontawesome.com/80821de148.js" crossorigin="anonymous"></script>
-	<title>Brians Ostebiks</title>
-	<!-- The core Firebase JS SDK is always required and must be listed first -->
-	<script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
-	<!-- TODO: Add SDKs for Firebase products that you want to use-->
-	<script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-firestore.js"></script>
-	<script>
-  	// Your web app's Firebase configuration
- 	var firebaseConfig = {
-    apiKey: "AIzaSyBvX_EU0LcP_aq6qQGCd2Isw1SlUoa1xyo",
-    authDomain: "brians-oste-biks.firebaseapp.com",
-    databaseURL: "https://brians-oste-biks.firebaseio.com",
-    projectId: "brians-oste-biks",
-    storageBucket: "brians-oste-biks.appspot.com",
-    messagingSenderId: "963200491883",
-    appId: "1:963200491883:web:c06b997b5b5d052beaac2e"
- 	 };
-  	// Initialize Firebase
-  	firebase.initializeApp(firebaseConfig);
-	</script>
-</head>
-<body><!-- importere html filer til denne. -->
-
-<nav>
-	<ul>
-		<li><a href="/">Brians Ostebiks</a></li>
-		<li><a href="/cheeses">Oste</a></li>
-		<li><a href="/wines">Vin</a></li>
-		<li><a href="/Breads">Brød</a></li>
-		<li href="#"><a>Kontakt</a></li>
-	</ul>
-</nav>
+<% include ../partials/head %><!-- importere html filer til denne. -->
+<% include ../partials/header %>
 
 <main>
 		<section class="product_mainSection">
@@ -94,6 +57,4 @@
 	
 <script src="/assets/js/fs-get-product.js"></script>
 	
-<script src="/assets/js/index.js"></script>
-</body>
-</html>
+<% include ../partials/after-footer %>
