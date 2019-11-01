@@ -20,11 +20,6 @@ document.addEventListener("DOMContentLoaded", () =>{
 				usersRated: firebase.firestore.FieldValue.increment(1),//Dette er en metode som ikke er inde i et objekt, så derfor kan jeg ikke bare skrive db., men istedet skrive firebase.firestore
 				totalSmileys: firebase.firestore.FieldValue.increment(smileys)
 			});
-			//console.log(1, smileys)
-		/* 	.get()//Henter det.
-			.then(function(doc){//Så laver jeg en function med det.
-				doc.data()
-			}) */
 	});
 	
 	docRef.collection("ratings")
@@ -42,6 +37,8 @@ document.addEventListener("DOMContentLoaded", () =>{
 				//console.log(avage)
 				productShow.querySelector("h3").innerText = avage.toFixed(1);//toFixed bestemmer man hvor mange dicimaler man vil have på, dette tilfælde kun et.
 			}
+
+			
 		});
 
 
