@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () =>{
 			if(usersRated == 0){
 				productShow.querySelector("h3").innerText = 0.0;
 			}else{
-				console.log(avage)
+				//console.log(avage)
 				productShow.querySelector("h3").innerText = avage.toFixed(1);//toFixed bestemmer man hvor mange dicimaler man vil have på, dette tilfælde kun et.
 			}
 		});
@@ -53,6 +53,7 @@ document.addEventListener("DOMContentLoaded", () =>{
 			if(productShow.querySelector("p")!= undefined)productShow.querySelector("p").innerText = doc.data().description;
 			if(productShow.querySelector(".imageBig")!= undefined)productShow.querySelector(".imageBig").src = `/assets/images/${doc.data().image[0]}`;
 			if(productShow.querySelector(".price")!= undefined)productShow.querySelector(".price").innerText = doc.data().price;
+			if(productShow.querySelector(".weight")!= undefined)productShow.querySelector(".weight").innerText = doc.data().weight;
 			if(productShow.querySelector(".country")!= undefined)productShow.querySelector(".country").innerText = doc.data().country;
 			if(productShow.querySelector(".region")!= undefined)productShow.querySelector(".region").innerText = doc.data().region;
 			if(productShow.querySelector(".category")!= undefined)productShow.querySelector(".category").innerText = doc.data().category;
